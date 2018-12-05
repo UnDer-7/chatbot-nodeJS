@@ -1,22 +1,21 @@
-const express = require('express');
-const bodyParser = require('body-parser');
+const express = require('express')
+const bodyParser = require('body-parser')
 
 class App {
-  constructor(){
-    this.express = express();
-    this.express.use(bodyParser.json());
+  constructor () {
+    this.express = express()
+    this.express.use(bodyParser.json())
 
-    this.middleware();
-    this.routes();
+    this.middleware()
+    this.routes()
   }
 
-  middleware(){
+  middleware () {
     this.express.use(express.urlencoded({ extended: false }))
   }
-  routes(){
+  routes () {
     this.express.use(require('./routes'))
   }
 }
 
-module.exports = new App().express;
-
+module.exports = new App().express

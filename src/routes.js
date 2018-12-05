@@ -1,12 +1,12 @@
-const express = require('express');
-const routes = express.Router();
+const express = require('express')
+const routes = express.Router()
 
-const rootUrl = '/api';
+const rootUrl = '/api'
 
 routes.get(`${rootUrl}/conversation/:text*?`, (req, res) => {
-  const { text } = req.params;
-  console.log(`TEXTO: ${text}`);
+  const { text } = req.params
+  console.log(`TEXTO: ${text}`)
 
-  res.json(text);
-});
-module.exports = routes;
+  res.json(text)
+})
+module.exports = routes
