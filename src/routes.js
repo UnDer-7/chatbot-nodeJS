@@ -3,7 +3,10 @@ const routes = express.Router();
 
 const rootUrl = '/api';
 
-routes.get(`${rootUrl}`, (req, res) => {
-  return res.json('agora foi porra');
+routes.get(`${rootUrl}/conversation/:text*?`, (req, res) => {
+  const { text } = req.params;
+  console.log(`TEXTO: ${text}`);
+
+  res.json(text);
 });
 module.exports = routes;
