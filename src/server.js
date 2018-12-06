@@ -13,6 +13,7 @@ class App {
   middleware () {
     this.express.use(express.urlencoded({ extended: false }))
   }
+
   routes () {
     this.express.use(require('./routes'))
   }
