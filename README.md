@@ -1,6 +1,6 @@
 <h1> chatbot-nodeJS </h1>
 <h2>
-Minha primeira API em NodeJS para um chatbot utilizando IBM Watson Assistant.
+Minha primeira API em NodeJS focada em um chatbot utilizando IBM Watson Assistant.
 <br>
 O chatbot temm o objetivo de achar livros baseado no que o usuario procurar
 </h2>
