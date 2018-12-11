@@ -1,11 +1,10 @@
 <h1> chatbot-nodeJS </h1>
 <h2>
-Minha primeira API em NodeJS focada em um chatbot utilizando IBM Watson Assistant.
+The chat-bot has the objective to find books.
 <br>
-O chatbot tem o objetivo de achar livros baseado no que o usuario procurar
+My first chat-bot, I decided to use Watson because of its simplicity
 </h2>
 <h3>
-Comando pra inicar o server: npm start
 <br>
-Mandar um POST com parametro "text"
+Just send a POST with a "text" parameter
 </h3>
